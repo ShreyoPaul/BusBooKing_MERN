@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.root{
+  width: 100vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: #d8d9dad6 ;
+}
+
+/* 
+#272829
+#61677A
+#D8D9DA
+#FFF6E0 
+*/
+
+/* --------LOGIN---------- */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 10px;
+}
+
+.login_container,
+.signup_container {
+  width: 450px;
+  padding: 40px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  box-shadow: rgba(82, 82, 82, 0.8);
+
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.input input {
+  width: 95%;
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.text{
+  margin-top: 2%;
+}
+
+a{
+  color: #272829;
+}
+
+.input {
+  padding-top: 5px;
+}
+
+.flexing {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.submit {
+  margin-top: 3%;
+  padding: 3%;
+  background-color: #272829;
+  border-radius: 5px;
+  width: 100px;
+  color: #FFF6E0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .login_container {
+    width: 400px;
+  }
+
+
+}
+
+.home {
+  padding: 50px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.all_bus_heading {
+  font-size: 48px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.date {
+  font-size: 30px;
+  padding-left: 15px;
+}
+
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 20px ;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  /* width: 100%; */
+}
+
+/* BUS CARD */
+.card {
+  box-shadow: #46474843 1px 1px 5px 0.3px;
+  background-color: #d8d9da9c;
+  padding: 25px;
+  /* border: 1px solid gray; */
+  border-radius: 7px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bus_name {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.bus_time,
+.bus_place {
+  /* padding: 10px 20px; */
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.bus_place {
+  gap: 15%;
+}
+
+.from,
+.to {
+  font-size: 14px;
+}
+
+.place1,
+.place2 {
+  line-height: 24px;
+}
+
+.seat {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.book_btn {
+  padding: 4%;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFF6E0;
+  background-color: #272829e5;
+}
+
+.book_btn:hover {
+  background-color: #272829;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .all_bus_heading {
+    font-size: 40px;
+  }
+
+  .card_container {
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    padding:  0;
+  }
+
+  .card{
+    margin-bottom: 30px;
+    width: 250px;
+  }
+
+  .bus_time,
+  .bus_place{
+    font-size: 20px;
+  }
+}
